@@ -7,7 +7,7 @@ let i = 0;
 function writeTheText() {
   if (i < length) {
     let speed = Math.random() * 160;
-    console.log(speed);
+    //console.log(speed);
     let textPart = inputText.substring(0, i);
     document.querySelector("#typewriter").innerHTML = textPart;
     i++;
