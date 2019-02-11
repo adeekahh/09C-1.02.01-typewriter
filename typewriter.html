@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Typewriter</title>
+    <link rel="icon" href="therock.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Special+Elite"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #input-text {
+        display: none;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      #wrapper {
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #typewriter {
+        font-size: 32px;
+      }
+
+      .the-rock {
+        width: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .the-rock:hover {
+        transform: rotate(360deg);
+      }
+      .the-rock,
+      #name-of-the-rock {
+        opacity: 0;
+        transition: all 1s ease-in-out;
+      }
+
+      #name-of-the-rock {
+        text-align: right;
+        padding-top: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <img src="therock.png" alt="Dwayne 'The ROCK' Johnson" class="the-rock" />
+      <h1 id="input-text">
+        Success isn't always about greatness. It's about consistency. Consistent
+        hard work leads to success. Greatness will come.
+      </h1>
+      <q id="typewriter"></q>
+      <h2 id="name-of-the-rock">Dwayne 'The Rock' Johnson</h2>
+    </div>
+    <div id="sounds">
+      <audio id="typekey1" src="typekey1.mp3"></audio>
+      <audio id="typekey2" src="typekey2.mp3"></audio>
+      <audio id="typespace" src="typespace.mp3"></audio>
+    </div>
+
+    <script src="typewriter.js"></script>
+  </body>
+</html>
